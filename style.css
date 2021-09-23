@@ -34,6 +34,7 @@ textarea {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
+  justify-content: space-between;
 }
 
 .hour {
@@ -63,24 +64,25 @@ textarea {
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+
 }
 
-.saveBtn i:hover {
+.saveBtn:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
 
-// Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap
+/* // Extra small devices (portrait phones, less than 576px) */
+/* // No media query since this is the default in Bootstrap */
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
