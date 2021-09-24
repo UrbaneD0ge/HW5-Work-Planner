@@ -8,6 +8,12 @@
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "HW5-Work-Planner"
+		"liveServer.settings.multiRootWorkspaceName": "HW5-Work-Planner",
+		"cSpell.ignoreWords": [
+			"crnt"
+		],
+		"cSpell.words": [
+			"dsplay"
+		]
 	}
 }
