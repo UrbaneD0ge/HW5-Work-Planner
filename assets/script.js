@@ -14,9 +14,9 @@ setInterval(displayTime, 1000);
 
 // Moment.js colorChanging - tried with moment.diff to no avail
 textArea.each(function(i) {
-    if (crntHr > i+9) {$(this).addClass('past')}
-    if (crntHr == i+9) {$(this).addClass('present')}
-    if (crntHr < i+9) {$(this).addClass('future')}
+    if (crntHr > i+9) {$(this).toggleClass('past')}
+    if (crntHr == i+9) {$(this).toggleClass('present')}
+    if (crntHr < i+9) {$(this).toggleClass('future')}
 });
 
 
