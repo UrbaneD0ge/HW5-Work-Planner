@@ -1,3 +1,4 @@
+//declare variables
 var today = $("#currentDay");
 var textArea = $('textarea');
 var crntHr = moment().format('H');
@@ -11,11 +12,12 @@ function displayTime() {
 
 setInterval(displayTime, 1000);
 
-// Moment.js colorChanging
-// init () {
-//     if (crntHr.diff(id.value) > 0) {
-//     }
-// } 
+// Moment.js colorChanging - tried with moment.diff to no avail
+textArea.each(function(i) {
+    if (crntHr > i+9) {$(this).parent.addClass('past')}
+    if (crntHr == i+9) {$(this).parent.addClass('present')}
+    if (crntHr < i+9) {$(this).parent.addClass('future')}
+});
 
 
 // save text to local storage (with help from Zac G.)
@@ -41,9 +43,9 @@ function start() {
         }
     dsplay(sVal, sKey);
     return sVal;
-
     }
-}
+};
+
 function dsplay (sVal, sKey) {
     for (var i = 0; i < sKey.length; i++) {
         $('#'+sKey[i]).val(sVal[i]);
