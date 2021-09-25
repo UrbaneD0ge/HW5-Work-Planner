@@ -14,8 +14,7 @@ textarea {
 }
 
 textarea:focus {
-  background-color: transparent;
-  color: black;
+  background-color: gray;
 }
 
 .jumbotron {
@@ -50,7 +49,7 @@ textarea:focus {
 
 .past {
   background-color: #d3d3d3;
-  color: black;
+  color: white;
 }
 
 .present {
@@ -67,7 +66,7 @@ textarea:focus {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: #6706d5;
   color: white;
 
 }

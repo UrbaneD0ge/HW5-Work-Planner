@@ -14,13 +14,13 @@ setInterval(displayTime, 1000);
 
 // Moment.js colorChanging - tried with moment.diff to no avail
 textArea.each(function(i) {
-    if (crntHr > i+9) {$(this).parent.addClass('past')}
-    if (crntHr == i+9) {$(this).parent.addClass('present')}
-    if (crntHr < i+9) {$(this).parent.addClass('future')}
+    if (crntHr > i+9) {$(this).addClass('past')}
+    if (crntHr == i+9) {$(this).addClass('present')}
+    if (crntHr < i+9) {$(this).addClass('future')}
 });
 
 
-// save text to local storage (with help from Zac G.)
+// save text to local storage 
 $('.saveBtn').on('click', saveLocal);
 
 function saveLocal () {
